@@ -1,29 +1,145 @@
-.hamburger{
-    font-size: 20px;
-    color: #00b39b;
-    font-weight: 300;
-}
 
+/* Dans ce style sheet, nous allons gérer la responsive de la page */
 @media screen and (max-width: 925px) {
-    
-    .main-menu{
+    /* La création d'un menu hamburger responsive */
+    #checkbox{
         display: none;
     }
 
-    
+    #checkbox:not(:checked) ~ .menu{
+        display: none;
+    }
+
+    .container-menu{
+        padding: 10px 0;
+    }
+
+    #checkbox:checked ~  .menu{
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: #00BFA5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+
+    .quit{
+        color: #fff !important;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 20px    ;
+        padding: 10px;
+    }
+    .menu li a:hover{
+        color: #fff !important;    
+    }
+
+    .menu li a{
+        color: #fff;
+    }
+
+    .menu li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .sub-menu{
+        border-bottom: 1px solid #fff;
+        background-color: transparent;
+    }
+
+    .sub-menu-item{
+        display: block;
+        text-align: center;
+        width: 100%;
+        box-shadow: none;
+        border-radius: none;
+    }
+
+    .sub-menu .sub-menu-item{
+        background-color: transparent !important;
+    }
+
     .logo {
         width: 168px;
         height: auto;
-        margin-left: 20px;
     }
 
-    
+    .logo-res{
+        width: 168px;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 20px    ;
 
-  
-   
+    }
+
+    .menu {
+        display: block;
+    }
+
+    /* La responsive du contenu de la page */
+
+    .section-titre{
+        font-size: 1em;
+    }
+
+    .section-desc{
+        flex-wrap: wrap;
+        display:  flex;
+    }
+
+    .section-box{
+        flex-wrap: wrap;
+        display:  flex;
+    }
+    
+    .section-brands{
+        flex-wrap: wrap;
+        display:  flex;
+    }
+
+    .brands-txt{
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .container-stats{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .txt-stat{
+        text-align: center;
+    }
+
+    .box-stat{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
 
 }
 
 @media  screen and (min-width: 925px) {
-
+    .check{
+        display: none;
+    }
 }
+
+.check i{
+    cursor: pointer;
+    color: #00BFA5;
+    margin-right: 20px;
+}
+
+
+
