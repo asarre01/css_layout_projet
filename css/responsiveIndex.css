@@ -1,0 +1,29 @@
+.hamburger{
+    font-size: 20px;
+    color: #00b39b;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 925px) {
+    
+    .main-menu{
+        display: none;
+    }
+
+    
+    .logo {
+        width: 168px;
+        height: auto;
+        margin-left: 20px;
+    }
+
+    
+
+  
+   
+
+}
+
+@media  screen and (min-width: 925px) {
+
+}
